@@ -6,7 +6,7 @@
  /**
  *Register bootstrap and custom scripts
  */
- 
+ define('DONOTCACHEPAGE', true);
 function adpost_enqueue_scripts(){
 	//register a script like this for a theme
 	wp_enqueue_script('tether-js', get_template_directory_uri().'/assets/js/tether-1.3.3/dist/js/tether.min.js');
@@ -14,6 +14,8 @@ function adpost_enqueue_scripts(){
 	wp_enqueue_script('jquery-validate-js', get_template_directory_uri().'/assets/js/jquery/jquery.validate.js');
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap/js/bootstrap.min.js');
 	wp_enqueue_script('adpost-js', get_template_directory_uri().'/assets/js/script.js');
+	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
+
 }
 add_action('wp_enqueue_scripts', 'adpost_enqueue_scripts');
 
@@ -21,6 +23,8 @@ function adpost_enqueue_style() {
 	wp_enqueue_style( 'custom-styles', get_template_directory_uri(). '/assets/css/custom-styles.css' );
 }
 add_action( 'login_enqueue_scripts', 'adpost_enqueue_style' );
+
+
 /**
 *Redirect to home page after login
 *
@@ -100,7 +104,7 @@ add_theme_support('custom-header', $header_img);
 *
 */
 $custom_background = array(
-	'default-color' => 'e9eef2',
+	'default-color' => 'fff',
 	'default-image' => ''
 );
 add_theme_support( 'custom-background', $args );
@@ -131,4 +135,23 @@ function adpost_widgets_init() {
 }
 add_action( 'widgets_init', 'adpost_widgets_init' );
 
+//contact form widget
+function contact_me_widget(){
+	if (isset($_POST['email'])) {
+		$name= $_POST['name'];
+		$to = $_POST['email'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$admin_email = 'pdm.molefe@gmail.com';
+		$headers[] = 'From: Pdm Molefe <pdm.molefe@gmail>';
+		
+		$sent = wp_mail( $to, $subject, $message, $headers );
+		if($sent){
+			return 'Message sent successfully!';
+		}
+		else{
+			return 'Sorry something went wrong. Please try again';
+		}
+	}
+}
 ?>

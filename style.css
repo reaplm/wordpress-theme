@@ -9,31 +9,105 @@ Version: 1.0
 @import url('assets/js/bootstrap/css/bootstrap.min.css'); 
 @import url('assets/js/bootstrap/css/bootstrap.css'); 
 body{
-	background-color: #e9eef2;
+	background-color: #e5e5e5;
 	font-size: .8125rem;
+	font-family: Century Gothic;
 }
 /*===============ONE PAGE SITE===================================*/
 #main-menu {
-	background-color: #2c2a33;
+	/*background-color: #f8d650;*/
+	/*background: rgba(18, 13, 17, 0.7);*/
 }
 .navbar a{
-	color: #fff;
+	color: #666;
+	font-size: 12pt;
+	font-family: Century Gothic;
 	
 }
+
 .navbar a:hover, .navbar a:active{
-	color: #f7547a;
+	color: #d94d4d;
 	text-decoration: underline;
 }
-.page-icon{
-	width: 50%;
-	height: 50%;
+.round-corners{
+	border-radius: 50%;
+}
+.nopadding{
+	padding: 0;
+}
+.padding{
+	padding: 15;
+}
+.name-title{
+	color: #d94d4d;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name-title h1 {
+	align-self: flex-end;
+}
+.social-links img{
+	width: 30px;
+}
+
+/*--------------------------------------------------SKILLS PAGE--------------------------------------------*/
+.bold-heading{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #636a6b;
+}
+
+	
+.skill-icon{
+	border-radius: 60px;
+	display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 5px #f8d650;
+  padding: 0.5em 0.6em;
+}
+.text-underline{
+	text-decoration: underline;
+}
+.border-left{
+	border-left: solid 2px;
+}
+.v-bar{
+	height: 90%;
+	width: 1px;
+	color: #ccc;
+	border: solid 1px;
+	margin: 0 auto;
+	
+}
+.v-bar-s{
+	height: 20px;
+	width: 1px;
+	color: #ccc;
+	border: solid 1px;
+	margin: 0 auto;
+	
+}
+.lg-bullet{
+	color: #f8d650;
+	font-size: 30pt;
+	padding: 0px;
+	margin: 0px;
+	line-height: 0.75em;
+}
+.md-bullet{
+	color: #f8d650;
+	font-size: 20pt;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	line-height: 0.75em;
 }
 /*====================================FOOTER===============*/
 .footer{
 	width: 100%;
-	background-color: #2c2a33;
-	color: #fff;
-	border: solid;
+	background-color: #f8d650;
+	color: #666;
 }
 .footer img{
 	width: 5%;
@@ -52,21 +126,79 @@ body{
 }
 .footer-footer{
 	/*border-top: solid 1px #d94d4d;*/
-	background-color: #2e202b;
+	background-color: #f8d650;
 	text-align: center;
 	padding-bottom: 0;
+	margin-top: 10px;
 }
-.footer .social-links img{
-	width: 30px;
-}
+
 .footer .social-links a:hover{
 	width: 30px;
 	text-decoration: none;
 }
 .footer .form-control, .footer textarea{
 	color: #fff;
-	background-color: #2c2a33;
+	background-color: #f8d650;
 	border: none;
-	border-bottom: solid #f7547a;
+	border-bottom: solid #fa6247;
 	border-radius: 0px;
+}
+.centered-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer .contact-me img{
+	width: 25px;
+	height: 25px;
+}
+#contact-form .btn-primary,
+#btn-downloadCV{
+	background-color: #d94d4d;
+	font-family: Century Gothic;
+	border: none;
+	margin-top: 10px;
+}
+
+
+#contact-form .error{
+	color: #d94d4d;
+}
+#contact-form label{
+		margin-bottom: 0px;
+}
+#contact-form input::placeholder{ /* Chrome/Opera/Safari */
+	color: #d94d4d;
+}
+
+#contact-form input::-webkit-input-placeholder{
+color: #d94d4d;
+}
+#contact-form input::-webkit-input-placeholder{
+	color: #d94d4d;
+}
+#contact-form input::-moz-placeholder{
+	color: #d94d4d;
+}
+#contact-form input:-ms-input-placeholder{
+	color: #d94d4d;
+}
+#contact-form input:-moz-placeholder{ 
+	color: #d94d4d;
+}
+#contact-form input, #contact-form textarea{
+	font-family: Century Gothic;
+	font-size: 11pt;
+}
+.progress-bar{
+	color: #666;
+}
+.progress .bar-1{
+	background-color: #f8d753;
+}
+.progress .bar-2{
+	background-color: #fae284;
+}
+.progress .bar-3{
+	background-color: #fff;
 }

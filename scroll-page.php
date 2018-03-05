@@ -15,13 +15,13 @@
 			
 			<?php if(have_posts()):while($the_query->have_posts()):$the_query->the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" class="page-content">
-				<div class="row">
-					<div class="col-sm-2 text-center"></div>
-					<div class="col-sm-8">
+				<div class="row h-100">
+					<div class="col-sm-1 text-center"></div>
+					<div class="col-sm-10">
 						<?php the_content(); 
 						?>
 					</div>
-					<div class="col-sm-2 text-center"></div>
+					<div class="col-sm-1 text-center"></div>
 				</div>
 				<?php 
 					

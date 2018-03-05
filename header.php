@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><?php bloginfo('name'); ?></title>
@@ -26,7 +26,7 @@
 				</button>
 				<div id="navbar-menu" class="navbar navbar-toggleable-md justify-content-between"
 					role="navigation" data-toggle="collapse" onClick="event.stopPropagation();">
-					<a class="navbar-brand" href="#home">ADPOST</a>
+					<a class="navbar-brand" href="#post-10">P.D.M</a>
 					<?php wp_nav_menu(
 							array(
 								'theme_location'=> 	'primary',

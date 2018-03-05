@@ -12,28 +12,17 @@
 				
 					
 				</div>
-				<div class="col-sm-4 text-center">
-					<div>
-						<h2>Pearl Molefe</h2>
-						<h2>pdm.molefe@gmail.com</h2>
-						<h2>+267 71406569</h2>
-						<h2>Gaborone</h2>
+				<div class="col-sm-4 centered-container">
+					<div class="contact-me">
+						<h3><img src="<?php echo esc_url( get_template_directory_uri() ); ?>
+							/assets/images/mail.png"/> pdm.molefe@gmail.com</h3>
+						<h3><img src="<?php echo esc_url( get_template_directory_uri() ); ?>
+							/assets/images/smartphone.png" class="d-inline"/> +267 71406569</h3>
+						<h3><img src="<?php echo esc_url( get_template_directory_uri() ); ?>
+							/assets/images/placeholder.png"/> Gaborone, Botswana</h3>
+						<h3><img src="<?php echo esc_url( get_template_directory_uri() ); ?>
+							/assets/images/skype.png"/> pearl.molefe</h3>
 						
-					</div>
-					<br />
-					<div class="social-links">
-						<a href="#" >
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/twitter-logo-silhouette.png" 
-								/> 
-						</a>
-						
-						<a href="#">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/facebook-logo_1.png"/> 
-						</a>
-						
-						<a href="https://linkedin.com/in/pearl-m/">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/linkedin.png"/> 
-						</a>
 					</div>
 				</div>
 				<div class="col-sm-2 d-flex  ">
