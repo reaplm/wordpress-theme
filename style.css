@@ -15,19 +15,30 @@ body{
 }
 /*===============ONE PAGE SITE===================================*/
 #main-menu {
-	/*background-color: #f8d650;*/
+	background-color: #e5e5e5;
 	/*background: rgba(18, 13, 17, 0.7);*/
 }
-.navbar a{
+#main-menu a{
 	color: #666;
 	font-size: 12pt;
 	font-family: Century Gothic;
 	
 }
 
-.navbar a:hover, .navbar a:active{
+#navbar-menu-toggle a:hover, 
+#navbar-menu-toggle a:active{
 	color: #d94d4d;
 	text-decoration: underline;
+	
+}
+@media (min-width: 992px){
+	#main-menu .collapse{
+		display: inherit;
+	}
+	
+}
+.navbar-toggler-icon{
+	color: #666;
 }
 .round-corners{
 	border-radius: 50%;
@@ -189,6 +200,9 @@ color: #d94d4d;
 #contact-form input, #contact-form textarea{
 	font-family: Century Gothic;
 	font-size: 11pt;
+}
+.collapse{
+	display: none;
 }
 .progress-bar{
 	color: #666;

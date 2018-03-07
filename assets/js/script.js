@@ -71,5 +71,9 @@ $(document).ready(
 		$("#contactWidgetSubmit").on("click", function(){
 			//e.preventDefault();
 		});
+		//Hide menu when link is clicked
+		$(document).on("click", ".nav-link", function(){
+			$("#navbar-menu-toggle").collapse('hide');
+		});
 	}
 );
