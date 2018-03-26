@@ -159,6 +159,9 @@ body{
 	align-items: center;
 	justify-content: center;
 }
+.contact-me{
+	font-size: 26px; /*20pt;*/
+}
 .footer .contact-me img{
 	width: 25px;
 	height: 25px;
@@ -170,8 +173,6 @@ body{
 	border: none;
 	margin-top: 10px;
 }
-
-
 #contact-form .error{
 	color: #d94d4d;
 }
